@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./docs/styles.css">
+    <title>Digital project</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo svg">
+                <img src="./img/svg/logo.svg" alt="Logo">
+                <img src="./img/svg/logoTxt.svg" alt="Logo">
+            </div>
+            <div class="header__nav">
+                <div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+                <ul class="header__ul" id="headerUl">
+                    <li class="header__li"><a class="header__a" href="/">ГЛАВНАЯ</a></li>
+                    <li class="header__li"><a class="header__a" href="/">ГАЛЕРЕЯ</a></li>
+                    <li class="header__li"><a class="header__a" href="/">ПРОЕКТЫ</a></li>
+                    <li class="header__li"><a class="header__a" href="/">СЕРТИФИКАТЫ</a></li>
+                    <li class="header__li"><a class="header__a" href="/">КОНТАКТЫ</a></li>
+                    <span class="material-icons icon-close" onclick="navToggle()">close</span>
+                </ul>
+                <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+            </div>
+        </header>
+
+
+        <footer class="footer">
+            <div>Footer</div>
+        </footer>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

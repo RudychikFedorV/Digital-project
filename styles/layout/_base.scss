@@ -1,0 +1,34 @@
+html {
+  font-size: var(--html-fs);
+}
+body {
+  font-size: 16px;
+  --font-family: var(--ff);
+  --second-family: var(--sf);
+  --third-family: var(--tf);
+  --font3: var(--font3);
+  scroll-behavior: smooth;
+}
+.wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 0 135px;
+}
+.icon {
+  fill: #000;
+  transition: var(--transition);
+}
+
+.icon:hover {
+  fill: var(--c-primary);
+}
+img {
+  cursor: pointer;
+}
+
+.svg {
+  transition: var(--transition);
+  &:hover {
+    scale: 1.1;
+  }
+}

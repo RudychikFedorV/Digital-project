@@ -1,0 +1,15 @@
+{
+  "name": "version",
+  "version": "1.0.0",
+  "description": "langing page",
+  "source": "index.html",
+  "scripts": {
+    "sass": "sass --style=expanded --watch styles:docs"
+  },
+  "author": "RFV",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "sass": "^1.72.0"
+  }
+}

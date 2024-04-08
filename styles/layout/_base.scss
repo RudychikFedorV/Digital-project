@@ -13,6 +13,12 @@ body {
   max-width: 1440px;
   margin-inline: auto;
   padding: 0 135px;
+  @include tablet {
+    padding: 0 30px;
+  }
+  @include mobile {
+    padding: 0 10px;
+  }
 }
 .icon {
   fill: #000;

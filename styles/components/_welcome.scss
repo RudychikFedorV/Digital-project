@@ -1,0 +1,90 @@
+.welcome {
+  @include f-s-c;
+  gap: 30px;
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+  &-left {
+    &__title {
+      max-width: 278px;
+      font: var(--txt-300-64-ff);
+      color: var(--color-title);
+      margin-bottom: 90px;
+      @include tablet {
+        margin-bottom: 10px;
+        max-width: 600px;
+        font: var(--txt-300-44-ff);
+      }
+      @include tablet-small {
+        font: var(--txt-300-34-ff);
+      }
+      @include mobile {
+        font: var(--txt-300-28-ff);
+      }
+      span {
+        font: var(--txt-700-64-ff);
+        color: var(--color-nav);
+        @include tablet {
+          font: var(--txt-700-44-ff);
+        }
+        @include tablet-small {
+          font: var(--txt-700-34-ff);
+        }
+        @include mobile {
+          font: var(--txt-700-28-ff);
+        }
+      }
+    }
+    &__arrows {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      margin-bottom: 90px;
+      @include tablet {
+        margin-bottom: 20px;
+      }
+      &-arrow {
+        padding: 15px;
+        border: var(--border-arrow);
+        background: var(--background-arrow);
+      }
+    }
+    &__number {
+      font: var(--txt-400-24-ff);
+      color: var(--color-title);
+      small {
+        color: var(--color-title);
+        padding: 0 23px;
+      }
+    }
+  }
+  &-right {
+    max-width: 770px;
+    max-height: 829px;
+    position: relative;
+    &__btn {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font: var(--txt-400-12-ff);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-nav);
+      padding: 23px 50px;
+      background: #fff;
+      @include tablet {
+        padding: 15px 30px;
+      }
+      @include tablet-small {
+        padding: 12px 24px;
+      }
+      @include mobile {
+        padding: 10px 20px;
+        gap: 6px;
+      }
+    }
+  }
+}

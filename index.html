@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./docs/styles.css">
     <title>Digital project</title>
 </head>
@@ -38,17 +39,33 @@
             <div class="welcome-left">
                 <h1 class="welcome-left__title">PROJECT <span>HOME</span></h1>
                 <div class="welcome-left__arrows">
-                    <img src="./img/svg/arrow-left.svg" alt="Arrow" class="welcome-left__arrows-arrow">
-                    <img src="./img/svg/arrow-right.svg" alt="Arrow" class="welcome-left__arrows-arrow">
+                    <img src="./img/svg/arrow-left.svg" alt="Arrow" class="welcome-left__arrows-arrow" id="arrow-left">
+                    <img src="./img/svg/arrow-right.svg" alt="Arrow" class="welcome-left__arrows-arrow"
+                        id="arrow-right">
                 </div>
-                <p class="welcome-left__number"> 01 <small>/</small> 02 </p>
+                <p class="welcome-left__number swiper-pagination-current"> 01 <small>/</small> 02 </p>
             </div>
+
             <div class="welcome-right">
-                <img src="./img/welcome.png" alt="PROJECT HOME" class="welcome-right__img">
-                <a href="/" class="welcome-right__btn">ВЗГЛЯНУТЬ
-                    <img src="./img/svg/arrow-right.svg" alt="Arrow">
-                </a>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/welcome.png" alt="PROJECT HOME" class="welcome-right__img">
+                            <a href="./pages/projects.html" class="welcome-right__btn">ВЗГЛЯНУТЬ
+                                <img src="./img/svg/arrow-right.svg" alt="Arrow">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/welcome.png" alt="PROJECT HOME" class="welcome-right__img">
+                            <a href="./pages/projects.html" class="welcome-right__btn">ВЗГЛЯНУТЬ
+                                <img src="./img/svg/arrow-right.svg" alt="Arrow">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
 
         </main>
 
@@ -56,6 +73,7 @@
     </div>
 
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

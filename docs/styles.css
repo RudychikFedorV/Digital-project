@@ -311,35 +311,35 @@ img {
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("./fonts/sf-pro-display_regular.woff2") format("woff2");
+  src: url("../fonts/sf-pro-display_regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: url("./fonts/Poppins-Bold.woff2") format("woff2");
+  src: url("../fonts/TTHoves-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: url("./fonts/TTHoves-Medium.woff2") format("woff2");
+  src: url("../fonts/TTHoves-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: url("./fonts/TTHoves-Light.woff2") format("woff2");
+  src: url("../fonts/TTHoves-Light.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: url("./fonts/TTHoves-Regular.woff2") format("woff2");
+  src: url("../fonts/TTHoves-Regular.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -508,11 +508,13 @@ img {
   border: var(--border-arrow);
   background: var(--background-arrow);
 }
-.welcome-left__number {
+.welcome-left__number,
+.welcome-left .swiper-pagination-current {
   font: var(--txt-400-24-ff);
   color: var(--color-title);
 }
-.welcome-left__number small {
+.welcome-left__number small,
+.welcome-left .swiper-pagination-current small {
   color: var(--color-title);
   padding: 0 23px;
 }

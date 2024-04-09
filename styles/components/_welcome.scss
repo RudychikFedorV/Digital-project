@@ -1,6 +1,7 @@
 .welcome {
   @include f-s-c;
   gap: 30px;
+  margin-bottom: 120px;
   @include tablet {
     flex-direction: column-reverse;
   }

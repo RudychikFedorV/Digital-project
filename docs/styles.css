@@ -157,6 +157,7 @@ p {
   --txt-300-44-ff: normal 300 44px / 100% var(--ff);
   --txt-300-34-ff: normal 300 34px / 100% var(--ff);
   --txt-300-28-ff: normal 300 28px / 100% var(--ff);
+  --txt-300-16-ff: normal 300 16px / 156% var(--ff);
   --txt-400-24-ff: normal 400 24px / 100% var(--ff);
   --txt-400-12-ff: normal 400 12px / 100% var(--ff);
   --txt-700-64-ff: normal 700 64px / 100% var(--ff);
@@ -168,6 +169,7 @@ p {
   --c-color-txt: #e0e0e0;
   --color-title: #bdbdbd;
   --color-nav: #333;
+  --color-black: #000;
   --background-arrow: #f9f9f9;
   --border-arrow: 1px solid #f2f2f2;
 }
@@ -444,6 +446,7 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  margin-bottom: 120px;
 }
 @media (max-width: 992px) {
   .welcome {
@@ -552,6 +555,93 @@ img {
     padding: 10px 20px;
     gap: 6px;
   }
+}
+
+.about-company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 70px 0 100px;
+}
+@media (max-width: 992px) {
+  .about-company {
+    padding: 30px 20px 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  .about-company {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .about-company {
+    padding: 0;
+  }
+}
+.about-company__foto {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .about-company__foto {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 576px) {
+  .about-company__foto {
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .about-company__foto {
+    flex-direction: column-reverse;
+  }
+}
+.about-company__foto-img {
+  display: grid;
+  gap: 30px;
+}
+@media (max-width: 576px) {
+  .about-company__foto-img {
+    gap: 10px;
+  }
+}
+.about-company__foto img {
+  flex-shrink: 0;
+}
+.about-company__info {
+  max-width: 400px;
+}
+.about-company__info__title {
+  font: var(--txt-300-64-ff);
+  color: var(--color-title);
+  margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .about-company__info__title {
+    font-size: 44px;
+  }
+}
+.about-company__info__desc {
+  font: var(--txt-300-16-ff);
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+.about-company__info__btn {
+  font: var(--txt-400-12-ff);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-nav);
+  background: var(--c-text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 222px;
+  height: 71px;
 }
 
 .footer {

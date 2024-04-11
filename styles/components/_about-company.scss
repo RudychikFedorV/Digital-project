@@ -2,14 +2,17 @@
   @include f-s-c;
   gap: 30px;
   padding: 30px 70px 0 100px;
+  margin-bottom: 120px;
   @include tablet {
     padding: 30px 20px 0 50px;
   }
   @include tablet-small {
     flex-direction: column;
+    margin-bottom: 80px;
   }
   @include mobile {
     padding: 0;
+    margin-bottom: 50px;
   }
   &__foto {
     display: flex;
@@ -43,7 +46,7 @@
       color: var(--color-title);
       margin-bottom: 20px;
       @include mobile-small {
-        font-size: 44px;
+        font: var(--txt-300-44-ff);
       }
     }
     &__desc {

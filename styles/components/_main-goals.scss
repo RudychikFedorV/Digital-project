@@ -1,0 +1,49 @@
+.main-goals {
+  &__title {
+    font: var(--txt-300-64-ff);
+    color: var(--color-title);
+    margin-bottom: 60px;
+    @include mobile {
+      text-align: center;
+    }
+    @include mobile-small {
+      font: var(--txt-300-44-ff);
+      margin-bottom: 30px;
+    }
+  }
+  &__blocks {
+    @include f-s-c;
+    gap: 20px;
+    flex-wrap: wrap;
+    &-block {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      @include mobile-small {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+      &__txt {
+        font: var(--txt-900-200-sf);
+        color: var(--color-desc);
+      }
+      &__desc {
+        font: var(--txt-400-22-ff);
+        color: var(--color-nav);
+        @include mobile-small {
+          margin-top: -30px;
+        }
+      }
+    }
+    .block-1 {
+      max-width: 413px;
+      @include tablet-small {
+        max-width: 570px;
+      }
+    }
+    .block-2 {
+      max-width: 570px;
+    }
+  }
+}

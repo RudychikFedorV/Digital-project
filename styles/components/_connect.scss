@@ -1,0 +1,107 @@
+.connect {
+  padding-top: 120px;
+  margin-bottom: 120px;
+  @include tablet-small {
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  @include mobile {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  &-title {
+    margin-bottom: 22px;
+  }
+  &-blocks {
+    @include f-s-c;
+    gap: 20px;
+    @include tablet-small {
+      flex-wrap: wrap;
+      row-gap: 40px;
+      justify-content: center;
+    }
+  }
+  .connect-form {
+    display: grid;
+    max-width: 391px;
+    gap: 10px;
+    @include tablet-small {
+      max-width: 550px;
+    }
+    &__block {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      margin-bottom: 21px;
+      &-desc {
+        font: var(--txt-400-14-ff);
+        letter-spacing: 0.03em;
+        color: var(--color-nav);
+      }
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font: var(--txt-400-12-ff);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    &__btn img {
+      margin-left: -70px;
+    }
+  }
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px 21px;
+  background: var(--background-input);
+  border: 0;
+}
+
+input[name="subject"] {
+  width: 100%;
+  padding: 15px 21px;
+  background: var(--background-input);
+  border: 0;
+}
+textarea {
+  width: 100%;
+  padding: 15px 21px 110px 21px;
+  background: var(--background-input);
+  border: 0;
+  resize: vertical;
+
+  font: var(--txt-400-14-ff);
+  letter-spacing: 0.04em;
+  color: var(--color-nav);
+  &::placeholder {
+    color: var(--color-placeholder);
+  }
+}
+input[type="submit"] {
+  color: var(--c-text-white);
+  padding: 24px 85px 24px 47px;
+  background: var(--color-nav);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  transition: var(--transition);
+}
+input[type="submit"]:hover {
+  background-color: var(--input-hover);
+}
+input {
+  background: transparent;
+  outline: 0;
+  font: var(--txt-400-14-ff);
+  letter-spacing: 0.04em;
+  color: var(--color-nav);
+  &::placeholder {
+    color: var(--color-placeholder);
+  }
+}

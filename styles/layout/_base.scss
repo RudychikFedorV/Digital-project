@@ -20,6 +20,17 @@ body {
     padding: 0 10px;
   }
 }
+.title {
+  font: var(--txt-300-64-ff);
+  color: var(--color-title);
+  @include mobile {
+    text-align: center;
+  }
+  @include mobile-small {
+    font: var(--txt-300-44-ff);
+    margin-bottom: 30px;
+  }
+}
 .icon {
   fill: #000;
   transition: var(--transition);

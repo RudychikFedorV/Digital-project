@@ -1,15 +1,13 @@
 .main-goals {
+  margin-bottom: 120px;
+  @include tablet-small {
+    margin-bottom: 80px;
+  }
+  @include mobile {
+    margin-bottom: 50px;
+  }
   &__title {
-    font: var(--txt-300-64-ff);
-    color: var(--color-title);
     margin-bottom: 60px;
-    @include mobile {
-      text-align: center;
-    }
-    @include mobile-small {
-      font: var(--txt-300-44-ff);
-      margin-bottom: 30px;
-    }
   }
   &__blocks {
     @include f-s-c;

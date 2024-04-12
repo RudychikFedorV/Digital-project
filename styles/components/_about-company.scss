@@ -42,12 +42,7 @@
   &__info {
     max-width: 400px;
     &__title {
-      font: var(--txt-300-64-ff);
-      color: var(--color-title);
       margin-bottom: 20px;
-      @include mobile-small {
-        font: var(--txt-300-44-ff);
-      }
     }
     &__desc {
       font: var(--txt-300-16-ff);

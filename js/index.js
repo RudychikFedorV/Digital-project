@@ -34,3 +34,4 @@ window.onload = function () {
     },
   });
 };
+document.getElementById("copyright").textContent = new Date().getFullYear();

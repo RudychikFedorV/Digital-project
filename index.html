@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./docs/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Digital project</title>
 </head>
 
@@ -45,7 +48,6 @@
                 </div>
                 <p class="welcome-left__number swiper-pagination-current"> 01 <small>/</small> 02 </p>
             </div>
-
             <div class="welcome-right">
                 <div class="swiper">
                     <div class="swiper-wrapper">
@@ -65,10 +67,8 @@
 
                 </div>
             </div>
-
-
         </section>
-        <section class="about-company">
+        <section class="about-company" data-aos="fade-up">
             <div class="about-company__foto">
                 <div class="about-company__foto-img">
                     <img src="./img/company-01.png" alt="About Company">
@@ -92,13 +92,13 @@
         <section class="main-goals">
             <h1 class="main-goals__title title">Основные задачи</h1>
             <div class="main-goals__blocks">
-                <div class="main-goals__blocks-block block-1">
+                <div class="main-goals__blocks-block block-1" data-aos="flip-left">
                     <p class="main-goals__blocks-block__txt">1</p>
                     <h3 class="main-goals__blocks-block__desc">Создание комфортных условий и повышение качества
                         обслуживания клиентов
                     </h3>
                 </div>
-                <div class="main-goals__blocks-block block-2">
+                <div class="main-goals__blocks-block block-2" data-aos="flip-right">
                     <p class="main-goals__blocks-block__txt">2</p>
                     <h3 class="main-goals__blocks-block__desc">Постоянно совершенствовать качество предоставляемых услуг
                         путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </section>
-        <section class="our-projects">
+        <section class="our-projects" data-aos="zoom-in">
             <h1 class="our-projects__title title">Наши проекты</h1>
             <div class="our-projects__blocks">
                 <div class="our-projects__blocks-block block">
@@ -160,7 +160,7 @@
                 <img src="./img/svg/arrow-2-right.svg" alt="Arrow">
             </a>
         </section>
-        <section class="connect">
+        <section class="connect" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h1 class="connect-title title">Связаться с нами</h1>
             <div class="connect-blocks">
                 <form action="#!" class="connect-form">
@@ -196,50 +196,57 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="footer-sections">
-                <div class="footer-logo">
-                    <img src="./img/svg/logo-w.svg" alt="Logo">
-                </div>
-                <div class="footer-info">
-                    <h2 class="footer-info__title footer-title">Информация</h2>
-                    <a href="#!" class="footer-info__txt">Главная</a>
-                    <a href="#!" class="footer-info__txt">Галерея</a>
-                    <a href="#!" class="footer-info__txt">Проекты</a>
-                    <a href="#!" class="footer-info__txt">Сертификаты</a>
-                    <a href="#!" class="footer-info__txt">Контакты</a>
-                </div>
-                <div class="footer-contacts">
-                    <h2 class="footer-contacts__title footer-title">Контакты</h2>
-                    <div class="footer-contacts__contact">
-                        <img src="./img/svg/contacts-01.svg" alt="Address">
-                        <a href="#!">100000, Республика Казахстан, <br> г. Караганда, ул. Телевизионная 10</a>
+        <footer class="footer" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="container">
+                <div class="footer-sections">
+                    <div class="footer-logo">
+                        <img src="./img/svg/logo-w.svg" alt="Logo">
                     </div>
-                    <div class="footer-contacts__contact">
-                        <img src="./img/svg/contacts-02.svg" alt="Address">
-                        <a href="tel:+38 (000) 000 00 00">+38 (000) 000 00 00</a>
+                    <div class="footer-info">
+                        <h2 class="footer-info__title footer-title">Информация</h2>
+                        <a href="#!" class="footer-info__txt">Главная</a>
+                        <a href="#!" class="footer-info__txt">Галерея</a>
+                        <a href="#!" class="footer-info__txt">Проекты</a>
+                        <a href="#!" class="footer-info__txt">Сертификаты</a>
+                        <a href="#!" class="footer-info__txt">Контакты</a>
                     </div>
-                    <div class="footer-contacts__contact">
-                        <img src="./img/svg/contacts-03.svg" alt="Address">
-                        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                    <div class="footer-contacts">
+                        <h2 class="footer-contacts__title footer-title">Контакты</h2>
+                        <div class="footer-contacts__contact">
+                            <img src="./img/svg/contacts-01.svg" alt="Address">
+                            <a href="#!">100000, Республика Казахстан, <br> г. Караганда, ул. Телевизионная 10</a>
+                        </div>
+                        <div class="footer-contacts__contact">
+                            <img src="./img/svg/contacts-02.svg" alt="Address">
+                            <a href="tel:+38 (000) 000 00 00">+38 (000) 000 00 00</a>
+                        </div>
+                        <div class="footer-contacts__contact">
+                            <img src="./img/svg/contacts-03.svg" alt="Address">
+                            <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-icons">
+                        <p class="footer-icons__title footer-title">Социальные сети</p>
+                        <div class="footer-icons__icon">
+                            <img src="./img/svg-icons/facebook.svg" alt="facebook">
+                            <img src="./img/svg-icons/twitter.svg" alt="twitter">
+                            <img src="./img/svg-icons/linked-In.svg" alt="linked-In">
+                            <img src="./img/svg-icons/pininterest.svg" alt="pininterest">
+                        </div>
                     </div>
                 </div>
-                <div class="footer-icons">
-                    <p class="footer-icons__title footer-title">Социальные сети</p>
-                    <div class="footer-icons__icon">
-                        <img src="./img/svg-icons/facebook.svg" alt="facebook">
-                        <img src="./img/svg-icons/twitter.svg" alt="twitter">
-                        <img src="./img/svg-icons/linked-In.svg" alt="linked-In">
-                        <img src="./img/svg-icons/pininterest.svg" alt="pininterest">
-                    </div>
-                </div>
+                <div class="footer-copy">@ <span id="copyright"></span> Digital Project. Все праваа защищены. </div>
+
             </div>
-            <div class="footer-copy">@ <span id="copyright"></span> Digital Project. Все праваа защищены. </div>
+
         </footer>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
